@@ -1,0 +1,249 @@
+/* ==========================================================================
+   TEIA Website - Clean Minimalist & Post White Design System
+   ========================================================================== */
+
+:root {
+    --primary: #0EA5E9;
+    --primary-dark: #0369A1;
+    --secondary: #0D9488;
+    --bg-dark: #090D16;
+    --bg-card: rgba(15, 23, 42, 0.7);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(45, 212, 191, 0.3);
+    
+    /* White Post Theme Variables */
+    --post-bg: #F8FAFC;
+    --post-card-bg: #FFFFFF;
+    --post-text-main: #0F172A;
+    --post-text-muted: #475569;
+    --post-border: #E2E8F0;
+    --post-accent: #0284C7;
+    --post-teal: #0D9488;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Dark Theme Default */
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: #F8FAFC;
+}
+
+/* White Theme Post Page */
+body.white-mode {
+    background-color: var(--post-bg);
+    color: var(--post-text-main);
+}
+
+/* Glassmorphism Clean Card (Dark) */
+.glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: 1.25rem;
+    transition: all 0.25s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+}
+
+/* White Card Post Style */
+.white-card {
+    background: var(--post-card-bg);
+    border: 1px solid var(--post-border);
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+    transition: all 0.25s ease;
+}
+
+.white-card:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 10px 25px -4px rgba(15, 23, 42, 0.08);
+}
+
+/* Typography Gradient */
+.gradient-text {
+    background: linear-gradient(135deg, #0284C7 0%, #0D9488 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.btn-main {
+    background: linear-gradient(135deg, #0EA5E9 0%, #0369A1 100%);
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.btn-main:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -4px rgba(14, 165, 233, 0.4);
+}
+
+.btn-outline {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #F8FAFC;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-white {
+    background: #F1F5F9;
+    border: 1px solid #E2E8F0;
+    color: #334155;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-white:hover {
+    background: #E2E8F0;
+    color: #0F172A;
+}
+
+/* Badges */
+.badge-beta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    background: rgba(251, 191, 36, 0.1);
+    color: #D97706;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-biotech {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    background: rgba(13, 148, 136, 0.1);
+    color: #0D9488;
+    border: 1px solid rgba(13, 148, 136, 0.3);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-genomics {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    background: rgba(147, 51, 234, 0.1);
+    color: #9333EA;
+    border: 1px solid rgba(147, 51, 234, 0.3);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Terminal Component (Dark Contrast in Post) */
+.terminal-window {
+    background: #090D16;
+    border: 1px solid #1E293B;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: #0F172A;
+    padding: 0.6rem 1rem;
+    border-b: 1px solid #1E293B;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.terminal-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+}
+.dot-red { background: #EF4444; }
+.dot-yellow { background: #F59E0B; }
+.dot-green { background: #10B981; }
+
+.terminal-title {
+    font-size: 0.75rem;
+    color: #94A3B8;
+    font-family: monospace;
+    margin-left: 0.5rem;
+}
+
+.terminal-window pre {
+    padding: 1.25rem;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 0.825rem;
+    line-height: 1.6;
+    color: #E2E8F0;
+    white-space: pre-wrap;
+    word-break: break-all;
+    max-height: 480px;
+    overflow-y: auto;
+}
+
+/* Colors inside Terminal Output */
+.term-green { color: #34D399; font-weight: bold; }
+.term-cyan { color: #38BDF8; font-weight: bold; }
+.term-yellow { color: #FBBF24; font-weight: bold; }
+.term-magenta { color: #F472B6; font-weight: bold; }
+.term-purple { color: #C084FC; font-weight: bold; }
+
+/* Custom Scrollbar for Terminal */
+.terminal-window pre::-webkit-scrollbar {
+    width: 6px;
+}
+.terminal-window pre::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+.terminal-window pre::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+/* White Post Table */
+.post-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+.post-table th {
+    background-color: #F1F5F9;
+    color: #334155;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid #E2E8F0;
+    text-align: left;
+}
+
+.post-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #F1F5F9;
+    color: #334155;
+}
+
+.post-table tr:hover td {
+    background-color: #F8FAFC;
+}

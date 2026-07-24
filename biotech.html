@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEIA BioTech | Poder Computacional em Biotecnologia</title>
+    <meta name="description" content="Visão breve da TEIA BioTech: poder computacional em biologia digital, engenharia de proteínas e triagem virtual.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased bg-slate-950 text-slate-100 flex flex-col min-h-screen">
+
+    <!-- NAV BAR -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-sky-500 to-teal-400 rounded-xl flex items-center justify-center font-extrabold text-white text-xl shadow-lg">
+                    T
+                </div>
+                <span class="text-2xl font-extrabold tracking-tight">TEIA <span class="text-teal-400">BioTech</span></span>
+            </a>
+
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-sm font-semibold text-slate-300 hover:text-white transition-colors">Início</a>
+                <a href="biotech.html" class="text-sm font-semibold text-teal-400">TEIA BioTech</a>
+                <a href="whitepaper.html" class="text-sm font-semibold text-slate-300 hover:text-white transition-colors">Paper & Resultados</a>
+                
+                <div class="flex items-center bg-slate-900 p-1 rounded-lg border border-white/10 text-xs font-bold">
+                    <a href="biotech.html" class="px-2.5 py-1 rounded bg-teal-500 text-white shadow-sm">PT 🇧🇷</a>
+                    <a href="biotech_en.html" class="px-2.5 py-1 rounded text-slate-400 hover:text-white transition-colors">EN 🇺🇸</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT BIOTECH -->
+    <main class="flex-grow pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto space-y-12 text-center">
+            <div class="inline-flex">
+                <span class="badge-biotech">🔬 Divisão TEIA BioTech</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+                Poder Computacional Disruptivo <br>
+                <span class="gradient-text">para a Biotecnologia.</span>
+            </h1>
+
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                A TEIA BioTech combina alta velocidade computacional em CPU local com precisão matemática determinística, revolucionando o estudo de proteínas, genômica e descoberta de fármacos.
+            </p>
+
+            <!-- 4 CARDS RESUMIDOS -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left pt-6">
+                <div class="glass-card p-6">
+                    <div class="text-teal-400 text-sm font-extrabold mb-1">01. PROTEÍNAS</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Dobramento & Estabilidade 3D</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Modelagem de estabilidade conformacional, ancoragem de pontes de dissulfeto e colapso de núcleo hidrofóbico em milissegundos.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6">
+                    <div class="text-teal-400 text-sm font-extrabold mb-1">02. MUTAÇÕES</div>
+                    <h3 class="font-bold text-lg text-white mb-2">In Silico Alanine Scanning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Varredura mutacional exaustiva cobrindo a fita primária para isolamento instantâneo de Hotspots críticos e posições tolerantes.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6">
+                    <div class="text-teal-400 text-sm font-extrabold mb-1">03. TRIAGEM DE DROGAS</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Virtual Screening Massivo</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Triagem vetorizada de bibliotecas com milhares de ligantes a mais de 11.200 moléculas por segundo sem falsos positivos.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6">
+                    <div class="text-teal-400 text-sm font-extrabold mb-1">04. GENÔMICA</div>
+                    <h3 class="font-bold text-lg text-white mb-2">DNA Matcher & OncoMatcher</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Verificação local de pedigree familiar e detecção de instabilidade genômica em variantes somáticas oncológicas (TP53).
+                    </p>
+                </div>
+            </div>
+
+            <!-- QUADRO DE LINK DIRETO PARA O PAPER -->
+            <div class="glass-card p-8 border-teal-500/40 bg-gradient-to-br from-slate-900 to-slate-950 text-center space-y-4 mt-12">
+                <h2 class="text-2xl font-bold text-white">Paper Técnico dos Experimentos (Protein)</h2>
+                <p class="text-slate-300 text-sm max-w-xl mx-auto">
+                    Confira todos os dados detalhados, tabelas de bancada e métricas da simulação real com a proteína Crambin (PDB ID: 1CRN).
+                </p>
+                <div class="pt-2">
+                    <a href="whitepaper.html" class="btn-main px-8 py-4 rounded-xl text-sm font-bold inline-block">
+                        Ler Paper dos Experimentos (App Protein) &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ SIMPLES -->
+    <footer class="py-8 px-6 border-t border-white/10 text-center text-xs text-slate-500">
+        © 2026 TEIA BioTech. Inteligência Computacional para Biotecnologia.
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
